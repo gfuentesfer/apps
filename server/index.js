@@ -1,16 +1,27 @@
 const cors = require('cors');
 const express = require('express');
 
-const { createPool, getDatabaseMode } = require('./db');
+const { createPool, getDatabaseMode, assertDatabaseConfig } = require('./db');
 const { createArrowsRouter } = require('./routes/arrows');
 const { createCatalogRouter } = require('./routes/catalog');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+assertDatabaseConfig();
+
 const pool = createPool();
 app.use(cors());
 app.use(express.json());
+
+app.get('/', (_req, res) => {
+  res.json({
+    service: 'MyArrows API',
+    health: '/health',
+    menu: '/menu',
+    mode: getDatabaseMode(),
+  });
+});
 
 app.get('/health', async (_req, res) => {
   try {

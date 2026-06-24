@@ -37,14 +37,20 @@ function resolvePgConfig() {
  */
 function createPool() {
   const pgConfig = resolvePgConfig();
+  const poolOptions = {
+    connectionTimeoutMillis: 8000,
+    idleTimeoutMillis: 10000,
+  };
+
   if (pgConfig) {
-    return new Pool(pgConfig);
+    return new Pool({ ...pgConfig, ...poolOptions });
   }
 
   if (process.env.DATABASE_URL) {
     return new Pool({
       connectionString: process.env.DATABASE_URL,
       ssl: NEON_SSL,
+      ...poolOptions,
     });
   }
 
@@ -54,7 +60,23 @@ function createPool() {
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME || 'arrows',
+    ...poolOptions,
   });
+}
+
+function assertDatabaseConfig() {
+  const isProduction =
+    process.env.NODE_ENV === 'production' || process.env.RENDER === 'true';
+  if (!isProduction) return;
+
+  const hasPg = resolvePgConfig() != null || Boolean(process.env.DATABASE_URL);
+  if (!hasPg) {
+    console.error(
+      'ERROR: En Render faltan variables de Neon. Configura PGHOST, PGUSER, ' +
+        'PGPASSWORD, PGDATABASE (o DATABASE_URL) en Environment.',
+    );
+    process.exit(1);
+  }
 }
 
 function getDatabaseMode() {
@@ -69,4 +91,4 @@ function getDatabaseMode() {
   return 'local';
 }
 
-module.exports = { createPool, getDatabaseMode };
+module.exports = { createPool, getDatabaseMode, assertDatabaseConfig };

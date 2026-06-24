@@ -6,7 +6,7 @@ class ApiConfig {
   /// --dart-define=API_PRODUCTION_URL=https://myarrows-api.onrender.com
   static const String _productionDefault = String.fromEnvironment(
     'API_PRODUCTION_URL',
-    defaultValue: 'https://REPLACE_AFTER_RENDER_DEPLOY.onrender.com',
+    defaultValue: 'https://apps-lw0x.onrender.com',
   );
 
   /// URL base de la API.

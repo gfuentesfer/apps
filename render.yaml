@@ -8,8 +8,8 @@ services:
     runtime: node
     region: frankfurt
     plan: free
-    rootDir: server
-    buildCommand: npm install
+  # Si Root Directory está vacío en el panel, el package.json de la raíz delega en server/
+    buildCommand: npm run build
     startCommand: npm start
     healthCheckPath: /health
     envVars:
