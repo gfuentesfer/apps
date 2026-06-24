@@ -1,0 +1,40 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "myarrowsapp",
+          "appId": "1:1009541590956:android:05fc523b5ebd01927b9409",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "myarrowsapp",
+          "configurations": {
+            "android": "1:1009541590956:android:05fc523b5ebd01927b9409",
+            "ios": "1:1009541590956:ios:5c92228be62380907b9409",
+            "macos": "1:1009541590956:ios:5c92228be62380907b9409",
+            "web": "1:1009541590956:web:b3db6e5b844f771a7b9409",
+            "windows": "1:1009541590956:web:9df7e15e691a7bec7b9409"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4000
+    }
+  }
+}

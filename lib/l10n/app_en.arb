@@ -1,0 +1,194 @@
+{
+  "@@locale": "en",
+  "appTitle": "MyArrows",
+
+  "cancel": "Cancel",
+  "save": "Save",
+  "retry": "Retry",
+  "required": "Required",
+  "user": "User",
+
+  "loginSubtitle": "Sign in to continue",
+  "email": "Email",
+  "emailRequired": "Enter your email",
+  "emailInvalid": "Enter a valid email",
+  "password": "Password",
+  "passwordRequired": "Enter your password",
+  "signIn": "Sign in",
+  "noAccountRegister": "Don't have an account? Sign up",
+
+  "createAccount": "Create account",
+  "name": "Name",
+  "nameRequired": "Enter your name",
+  "passwordMinLength": "At least 6 characters",
+  "confirmPassword": "Confirm password",
+  "passwordsDoNotMatch": "Passwords do not match",
+  "register": "Register",
+  "profileCreateFailed": "Could not create profile. Please try again.",
+
+  "menu": "Menu",
+  "reloadMenu": "Reload menu",
+  "menuLoadError": "Could not load menu",
+  "routeNotConfigured": "Route not configured: {route}",
+  "@routeNotConfigured": {
+    "placeholders": {
+      "route": {"type": "String"}
+    }
+  },
+  "signOut": "Sign out",
+  "signOutConfirmTitle": "Sign out",
+  "signOutConfirmMessage": "Are you sure you want to sign out?",
+  "settingsComingSoon": "Settings coming soon",
+
+  "menuHome": "Home",
+  "menuHomeSubtitle": "Main screen",
+  "homeWelcome": "Your arrow assistant",
+  "homeSubtitle": "Calculate spine, length, and compatible models for your bow and shooting style.",
+  "menuProfile": "My profile",
+  "menuProfileSubtitle": "View and edit your profile",
+  "menuSettings": "Settings",
+  "menuSettingsSubtitle": "App settings",
+  "menuArrows": "Arrow calculator",
+  "menuArrowsSubtitle": "Spine, length and models by brand",
+
+  "editProfile": "Edit profile",
+  "emailCannotChange": "Email cannot be changed",
+  "profileLoadError": "Could not load profile.",
+  "profileSaveError": "Could not save profile. Please try again.",
+  "profileNotFound": "Profile not found in Firestore.",
+  "editProfileTooltip": "Edit profile",
+
+  "language": "Language",
+  "languageSystem": "System default",
+  "languageSpanish": "Spanish",
+  "languageEnglish": "English",
+  "settings": "Settings",
+  "settingsLanguageSubtitle": "Choose app language",
+
+  "arrowCalculator": "Arrow calculator",
+  "yourBow": "Your bow",
+  "arrowBrand": "Arrow brand",
+  "bowType": "Bow type",
+  "shootingStyle": "Shooting style",
+  "drawWeight": "Draw weight",
+  "drawWeightRange": "Between 10 and 100 lbs",
+  "drawLength": "Draw length",
+  "drawLengthRange": "Between 20 and 34\"",
+  "bowSpeedFps": "Bow speed (FPS)",
+  "fpsUnknown": "I don't know my bow speed (FPS)",
+  "fpsUnknownHint": "Calculation uses draw weight and point only, without speed adjustment",
+  "adjustedByPointOnly": "Based on draw weight and point (no FPS adjustment)",
+  "compoundBowBrand": "Compound bow brand",
+  "compoundBowBrandHint": "Optional: pick your bow to load manufacturer IBO speed",
+  "compoundBowManual": "Other / enter manually",
+  "compoundBowModel": "Bow model",
+  "compoundBowSelectModel": "Select model…",
+  "compoundBowIboFps": "{fps} FPS IBO",
+  "@compoundBowIboFps": {
+    "placeholders": {
+      "fps": {"type": "int"}
+    }
+  },
+  "fpsFromBowModel": "Manufacturer IBO: {model} ({fps} FPS)",
+  "@fpsFromBowModel": {
+    "placeholders": {
+      "model": {"type": "String"},
+      "fps": {"type": "int"}
+    }
+  },
+  "fpsManualOverride": "Speed adjusted manually",
+  "chartLabel": "Chart: {name}",
+  "@chartLabel": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "fpsReference": "(ref. {min}–{max})",
+  "@fpsReference": {
+    "placeholders": {
+      "min": {"type": "int"},
+      "max": {"type": "int"}
+    }
+  },
+  "calculating": "Calculating…",
+  "calculateArrow": "Calculate arrow",
+  "recommendation": "Recommendation",
+  "arrowLength": "Arrow length",
+  "drawLengthPlusOne": "Draw length + 1\"",
+  "spine": "Spine",
+  "recommendedPoint": "Recommended point",
+  "pointGrains": "{grains} gr",
+  "@pointGrains": {
+    "placeholders": {
+      "grains": {"type": "int"}
+    }
+  },
+  "perChart": "Per chart {name}",
+  "@perChart": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "effectiveWeight": "Effective weight",
+  "adjustedByFpsPoint": "Adjusted for FPS and point weight",
+  "compatibleModels": "Compatible models ({count})",
+  "@compatibleModels": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "noModelsForSpine": "No catalog models for this spine.",
+  "spineLabel": "Spine {label}",
+  "@spineLabel": {
+    "placeholders": {
+      "label": {"type": "String"}
+    }
+  },
+  "shaftWeight": "Shaft {weight} gr",
+  "@shaftWeight": {
+    "placeholders": {
+      "weight": {"type": "String"}
+    }
+  },
+  "totalWeight": "Total ~{weight} gr",
+  "@totalWeight": {
+    "placeholders": {
+      "weight": {"type": "String"}
+    }
+  },
+  "maxLength": "Max {length}\"",
+  "@maxLength": {
+    "placeholders": {
+      "length": {"type": "String"}
+    }
+  },
+
+  "bowTypeRecurve": "Olympic / ILF recurve bow",
+  "bowTypeBarebow": "Barebow",
+  "bowTypeTraditional": "Traditional / longbow / self bow",
+  "bowTypeCompound": "Compound bow",
+
+  "styleOlympicRecurve": "Olympic recurve (fingers)",
+  "styleBarebowStandard": "Standard barebow",
+  "styleBarebowStringwalking": "Barebow string walking",
+  "styleTraditionalFinger": "Traditional with fingers",
+  "styleCompoundRelease": "Compound (release aid)",
+
+  "authInvalidEmail": "The email is not valid.",
+  "authUserDisabled": "This account is disabled.",
+  "authWrongCredentials": "Incorrect email or password.",
+  "authEmailInUse": "An account with this email already exists.",
+  "authWeakPassword": "Password must be at least 6 characters.",
+  "authTooManyRequests": "Too many attempts. Try again later.",
+  "authGenericError": "Authentication error. Please try again.",
+  "authConfigurationNotFound": "Firebase Authentication is not set up. In the Firebase console open Authentication, click Get started, and enable Email/Password.",
+
+  "arrowModelX10": "Premium Olympic arrow",
+  "arrowModelAce": "Competition alloy/carbon",
+  "arrowModelAcPro": "Competition alloy/carbon pro",
+  "arrowModelNavigator": "Outdoor aluminum recurve",
+  "arrowModelJazz": "Beginner aluminum",
+  "arrowModelFmj": "Full metal jacket hunting",
+  "arrowModelAxis": "Carbon hunting",
+  "arrowModelGeneric": "Arrow shaft"
+}
