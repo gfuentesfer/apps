@@ -169,6 +169,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsLanguageSubtitle => 'Choose app language';
 
   @override
+  String get privacyPolicy => 'Privacy policy';
+
+  @override
+  String get privacyPolicySubtitle => 'How we handle your data';
+
+  @override
   String get arrowCalculator => 'Arrow calculator';
 
   @override

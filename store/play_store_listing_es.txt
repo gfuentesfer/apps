@@ -1,0 +1,31 @@
+# Ficha de Play Store — MyArrows (español)
+# Copia y pega en Google Play Console → Presencia en la tienda
+
+Título (máx. 30 caracteres):
+MyArrows
+
+Descripción breve (máx. 80 caracteres):
+Calculadora de spine y flechas para arco recurvo, barebow y compuesto.
+
+Descripción completa:
+MyArrows te ayuda a elegir el spine y los modelos de flecha adecuados para tu arco.
+
+Características:
+• Calculadora de spine según peso de arco, longitud de flecha, tipo de arco y estilo
+• Soporte para recurvo olímpico, barebow, tradicional y arco compuesto
+• Catálogo de modelos Easton, Victory y Skylon
+• Catálogo de arcos compuestos por marca y modelo
+• Opción «No conozco FPS» cuando no tienes la velocidad del arco
+• Interfaz en español e inglés
+
+La app consulta una API en la nube para los cálculos y el catálogo. No necesitas crear cuenta.
+
+Desarrollado por GFF.
+
+Categoría sugerida: Deportes
+
+Etiquetas / palabras clave (referencia):
+arquería, flechas, spine, arco recurvo, barebow, compuesto, Easton, calculadora
+
+Política de privacidad (URL):
+https://gfuentesfer.github.io/apps/myarrowsapp/privacy-policy.html

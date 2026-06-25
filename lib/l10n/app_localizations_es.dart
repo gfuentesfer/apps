@@ -170,6 +170,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsLanguageSubtitle => 'Elige el idioma de la aplicación';
 
   @override
+  String get privacyPolicy => 'Política de privacidad';
+
+  @override
+  String get privacyPolicySubtitle => 'Cómo tratamos tus datos';
+
+  @override
   String get arrowCalculator => 'Calculadora de flechas';
 
   @override

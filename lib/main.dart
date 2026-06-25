@@ -3,6 +3,7 @@ import 'package:myarrowsapp/l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'screens/home_screen.dart';
+import 'database/app_database.dart';
 import 'services/ads_service.dart';
 import 'services/locale_service.dart';
 
@@ -11,6 +12,7 @@ Future<void> main() async {
 
   final localeService = LocaleService();
   await localeService.init();
+  await AppDatabase.init();
   await AdsService.init();
 
   runApp(MyApp(localeService: localeService));

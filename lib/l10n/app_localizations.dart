@@ -410,6 +410,18 @@ abstract class AppLocalizations {
   /// **'Choose app language'**
   String get settingsLanguageSubtitle;
 
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy policy'**
+  String get privacyPolicy;
+
+  /// No description provided for @privacyPolicySubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How we handle your data'**
+  String get privacyPolicySubtitle;
+
   /// No description provided for @arrowCalculator.
   ///
   /// In en, this message translates to:

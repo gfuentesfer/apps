@@ -1,18 +1,13 @@
 import 'package:flutter/foundation.dart';
 
-/// IDs de AdMob.
-///
-/// En desarrollo se usan los de prueba de Google. Para producción, crea la app
-/// en https://admob.google.com y pásalos con --dart-define al compilar:
-///
-/// flutter build apk --dart-define=ADMOB_ANDROID_APP_ID=ca-app-pub-xxx~yyy \
-///   --dart-define=ADMOB_ANDROID_BANNER_ID=ca-app-pub-xxx/zzz
+/// IDs de AdMob — MyArrows (Android).
+/// En debug se usan banners de prueba de Google para no infringir políticas.
 class AdConfig {
   AdConfig._();
 
   static const String androidAppId = String.fromEnvironment(
     'ADMOB_ANDROID_APP_ID',
-    defaultValue: 'ca-app-pub-3940256099942544~3347511713',
+    defaultValue: 'ca-app-pub-2306610483016230~9322448094',
   );
 
   static const String iosAppId = String.fromEnvironment(
@@ -20,17 +15,27 @@ class AdConfig {
     defaultValue: 'ca-app-pub-3940256099942544~1458002511',
   );
 
-  static const String androidBannerId = String.fromEnvironment(
-    'ADMOB_ANDROID_BANNER_ID',
-    defaultValue: 'ca-app-pub-3940256099942544/6300978111',
-  );
+  static const String _androidBannerProduction =
+      'ca-app-pub-2306610483016230/3659057879';
 
-  static const String iosBannerId = String.fromEnvironment(
-    'ADMOB_IOS_BANNER_ID',
-    defaultValue: 'ca-app-pub-3940256099942544/2934735716',
-  );
+  static const String _androidBannerTest =
+      'ca-app-pub-3940256099942544/6300978111';
 
-  static bool get usingTestAds =>
-      kDebugMode &&
-      androidBannerId.startsWith('ca-app-pub-3940256099942544');
+  static const String _iosBannerTest =
+      'ca-app-pub-3940256099942544/2934735716';
+
+  static String get androidBannerId {
+    const fromEnv = String.fromEnvironment('ADMOB_ANDROID_BANNER_ID');
+    if (fromEnv.isNotEmpty) return fromEnv;
+    if (kDebugMode) return _androidBannerTest;
+    return _androidBannerProduction;
+  }
+
+  static String get iosBannerId {
+    const fromEnv = String.fromEnvironment('ADMOB_IOS_BANNER_ID');
+    if (fromEnv.isNotEmpty) return fromEnv;
+    return _iosBannerTest;
+  }
+
+  static bool get usingTestAds => kDebugMode;
 }

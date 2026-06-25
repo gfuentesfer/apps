@@ -1,29 +1,18 @@
-import 'dart:convert';
-
-import 'package:http/http.dart' as http;
-
-import '../config/api_config.dart';
+import '../database/menu_repository.dart';
 import '../models/menu_item.dart';
 
 class MenuService {
-  MenuService({http.Client? client, String? baseUrl})
-      : _client = client ?? http.Client(),
-        _baseUrl = baseUrl ?? ApiConfig.baseUrl;
+  MenuService({MenuRepository? repository})
+      : _repository = repository ?? MenuRepository();
 
-  final http.Client _client;
-  final String _baseUrl;
+  final MenuRepository _repository;
 
   Future<List<MenuItem>> fetchMenuItems() async {
-    final response = await _client.get(Uri.parse('$_baseUrl/menu'));
-
-    if (response.statusCode != 200) {
-      throw MenuServiceException('Error al cargar el menú (${response.statusCode})');
+    try {
+      return _repository.fetchMenuItems();
+    } catch (e) {
+      throw MenuServiceException('Error al cargar el menú: $e');
     }
-
-    final List<dynamic> data = jsonDecode(response.body) as List<dynamic>;
-    return data
-        .map((item) => MenuItem.fromJson(item as Map<String, dynamic>))
-        .toList();
   }
 }
 

@@ -64,6 +64,8 @@
   "languageEnglish": "English",
   "settings": "Settings",
   "settingsLanguageSubtitle": "Choose app language",
+  "privacyPolicy": "Privacy policy",
+  "privacyPolicySubtitle": "How we handle your data",
 
   "arrowCalculator": "Arrow calculator",
   "yourBow": "Your bow",

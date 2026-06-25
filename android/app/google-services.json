@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1009541590956:android:05fc523b5ebd01927b9409",
         "android_client_info": {
-          "package_name": "com.example.myarrowsapp"
+          "package_name": "com.gff"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "1009541590956-eh8iadct39g61c65i4m68d309f8pn8bs.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.myarrowsapp",
+            "package_name": "com.gff",
             "certificate_hash": "2780027da96b5bb4463fd9f66fb03d548f932d5e"
           }
         },
@@ -42,7 +42,7 @@
               "client_id": "1009541590956-0tgj2s90bgspans1bd42s168hch61uia.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.myarrowsapp"
+                "bundle_id": "com.gff"
               }
             }
           ]

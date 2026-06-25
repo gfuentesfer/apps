@@ -2,12 +2,8 @@
   "name": "myarrowsapp",
   "version": "1.0.0",
   "private": true,
-  "description": "Entrypoint Render cuando Root Directory está vacío (usa server/)",
+  "description": "MyArrows Flutter app — base de datos SQLite embebida",
   "scripts": {
-    "build": "npm install --prefix server",
-    "start": "npm start --prefix server"
-  },
-  "engines": {
-    "node": ">=20"
+    "db:build": "npm install --prefix scripts && node scripts/build-sqlite-db.js"
   }
 }

@@ -3,8 +3,10 @@ import 'package:myarrowsapp/l10n/app_localizations.dart';
 
 import '../services/locale_service.dart';
 import '../widgets/banner_ad_widget.dart';
+import '../widgets/language_picker.dart';
 import 'arrow_calculator_screen.dart';
 import 'menu_screen.dart';
+import 'settings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.localeService});
@@ -25,8 +27,11 @@ class HomeScreen extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             stretch: true,
+            iconTheme: const IconThemeData(color: Colors.white),
+            actionsIconTheme: const IconThemeData(color: Colors.white),
             leading: IconButton(
               icon: const Icon(Icons.menu),
+              tooltip: l10n.menu,
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute<void>(
@@ -35,6 +40,26 @@ class HomeScreen extends StatelessWidget {
                 );
               },
             ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.language),
+                tooltip: l10n.language,
+                onPressed: () =>
+                    showLanguagePicker(context, localeService),
+              ),
+              IconButton(
+                icon: const Icon(Icons.settings_outlined),
+                tooltip: l10n.settings,
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) =>
+                          SettingsScreen(localeService: localeService),
+                    ),
+                  );
+                },
+              ),
+            ],
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 l10n.appTitle,

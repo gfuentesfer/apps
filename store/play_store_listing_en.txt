@@ -1,0 +1,28 @@
+# Play Store listing — MyArrows (English)
+# Copy into Google Play Console → Store presence
+
+Title (max 30 chars):
+MyArrows
+
+Short description (max 80 chars):
+Arrow spine calculator for recurve, barebow, traditional and compound bows.
+
+Full description:
+MyArrows helps you choose the right arrow spine and shaft models for your bow setup.
+
+Features:
+• Spine calculator based on draw weight, arrow length, bow type and shooting style
+• Olympic recurve, barebow, traditional and compound bow support
+• Easton, Victory and Skylon model catalog
+• Compound bow catalog by brand and model
+• "I don't know FPS" option when bow speed is unknown
+• Spanish and English UI
+
+The app uses a cloud API for calculations and catalog data. No account required.
+
+By GFF.
+
+Suggested category: Sports
+
+Privacy policy URL:
+https://gfuentesfer.github.io/apps/myarrowsapp/privacy-policy.html

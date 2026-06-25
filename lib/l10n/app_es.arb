@@ -59,6 +59,8 @@
   "languageEnglish": "Inglés",
   "settings": "Configuración",
   "settingsLanguageSubtitle": "Elige el idioma de la aplicación",
+  "privacyPolicy": "Política de privacidad",
+  "privacyPolicySubtitle": "Cómo tratamos tus datos",
 
   "arrowCalculator": "Calculadora de flechas",
   "yourBow": "Tu arco",
