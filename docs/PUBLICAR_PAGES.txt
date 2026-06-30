@@ -1,0 +1,26 @@
+# Publicar la política de privacidad en GitHub Pages
+
+## Una sola vez (en GitHub.com)
+
+1. Repo **gfuentesfer/apps** → **Settings** → **Pages**
+2. En **Build and deployment** → **Source**: elige **GitHub Actions**
+3. Guarda
+
+## Subir los archivos
+
+```powershell
+cd c:\workspace2\apps\myarrowsapp
+git push origin main
+```
+
+El workflow `.github/workflows/pages.yml` publicará la carpeta `docs/` automáticamente.
+
+## URL para Play Console (cuando Pages esté activo)
+
+https://gfuentesfer.github.io/apps/privacy-policy.html
+
+Comprueba que abre en el navegador (modo incógnito) antes de enviar la app a revisión.
+
+## Si Pages tarda
+
+Tras el primer push, el despliegue puede tardar 1–3 minutos. Mira **Actions** en el repo: el job «Deploy privacy policy» debe estar en verde.
