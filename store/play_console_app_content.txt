@@ -64,7 +64,7 @@ Finalidad: Publicidad o marketing
 ¿El usuario puede solicitar eliminación? → No aplica datos en servidor GFF; para Google ver política de Google
 
 Política de privacidad (obligatorio):
-https://raw.githubusercontent.com/gfuentesfer/apps/main/docs/privacy-policy.html
+https://github.com/gfuentesfer/apps/blob/main/docs/privacy-policy.md
 (Debe estar publicada y accesible antes de enviar a revisión)
 
 ================================================================================

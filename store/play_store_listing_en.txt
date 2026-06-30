@@ -25,4 +25,4 @@ By GFF.
 Suggested category: Sports
 
 Privacy policy URL:
-https://raw.githubusercontent.com/gfuentesfer/apps/main/docs/privacy-policy.html
+https://github.com/gfuentesfer/apps/blob/main/docs/privacy-policy.md

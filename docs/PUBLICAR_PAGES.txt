@@ -1,7 +1,5 @@
-# Política de privacidad — URL para Play Console
+# URL para Play Console — política de privacidad
 
-Copia y pega esta URL (ya funciona, no hace falta configurar nada en GitHub):
+Copia esta URL (se ve bien formateada en el navegador):
 
-https://raw.githubusercontent.com/gfuentesfer/apps/main/docs/privacy-policy.html
-
-Abre ese enlace en el navegador para comprobarlo antes de enviar la app.
+https://github.com/gfuentesfer/apps/blob/main/docs/privacy-policy.md

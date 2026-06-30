@@ -28,4 +28,4 @@ Etiquetas / palabras clave (referencia):
 arquería, flechas, spine, arco recurvo, barebow, compuesto, Easton, calculadora
 
 Política de privacidad (URL):
-https://raw.githubusercontent.com/gfuentesfer/apps/main/docs/privacy-policy.html
+https://github.com/gfuentesfer/apps/blob/main/docs/privacy-policy.md
