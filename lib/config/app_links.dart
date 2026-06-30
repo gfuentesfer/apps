@@ -2,8 +2,7 @@
 class AppLinks {
   AppLinks._();
 
-  /// Tras activar GitHub Pages (repo → Settings → Pages → /docs):
-  /// https://gfuentesfer.github.io/apps/privacy-policy.html
+  /// Política de privacidad publicada en GitHub (no requiere activar Pages).
   static const String privacyPolicyUrl =
-      'https://gfuentesfer.github.io/apps/privacy-policy.html';
+      'https://raw.githubusercontent.com/gfuentesfer/apps/main/docs/privacy-policy.html';
 }
