@@ -1,0 +1,99 @@
+# Play Console — App content (respuestas guía para MyArrows)
+# Menú: Policy → App content
+
+================================================================================
+PUBLICIDAD (Ads)
+================================================================================
+¿La app contiene anuncios?  → SÍ
+
+Proveedor: Google AdMob (banners en Inicio, Menú y Ajustes; no en la calculadora)
+
+================================================================================
+CLASIFICACIÓN DE CONTENIDO (IARC)
+================================================================================
+Tipo: Aplicación / utilidad deportiva
+
+Violencia: Ninguna
+Sexualidad: Ninguna
+Lenguaje: Ninguno
+Drogas: Ninguna
+Apuestas: No
+Interacción entre usuarios: No (sin chat, sin redes sociales)
+Compartir ubicación: No
+Compras digitales: No
+
+Resultado esperado: PEGI 3 / Everyone / para todo público
+
+Preguntas típicas:
+- ¿App dirigida a niños? → NO (público general, arquería deportiva)
+- ¿Recopila datos personales de menores? → NO (no hay registro de usuarios)
+
+================================================================================
+PÚBLICO OBJIVO (Target audience)
+================================================================================
+Grupo de edad: 13 años o más (recomendado)
+  (arquería deportiva; no es app infantil)
+
+¿Dirigida principalmente a niños? → NO
+
+Si Play Console exige rango: 13–17 y 18+ (adultos aficionados al tiro con arco)
+
+================================================================================
+SEGURIDAD DE DATOS (Data safety)
+================================================================================
+¿Recopilas o compartes datos de usuario? → SÍ (por terceros: publicidad)
+
+--- Datos que TÚ (GFF) recopilas ---
+Ninguno enviado a servidores propios.
+• Preferencia de idioma → almacenamiento local en el dispositivo (no sube a internet)
+• Valores de la calculadora → procesados localmente (SQLite); no se guardan en servidor
+
+En el formulario: si solo preguntan por TU app sin terceros, muchas secciones = NO recopilas.
+
+--- Datos que recopilan TERCEROS (Google AdMob) ---
+Marca: datos recopilados por partners / terceros → SÍ
+
+Tipos habituales para AdMob (marca según el cuestionario):
+• Identificadores del dispositivo (Advertising ID)
+• Datos de diagnóstico / rendimiento (crash, si aplica vía Google Play)
+• Interacción con anuncios
+
+Finalidad: Publicidad o marketing
+¿Opcional para el usuario? → No (anuncios integrados; usuario puede limitar ID en ajustes Android)
+¿Cifrado en tránsito? → Sí (HTTPS para anuncios)
+¿El usuario puede solicitar eliminación? → No aplica datos en servidor GFF; para Google ver política de Google
+
+Política de privacidad (obligatorio):
+https://gfuentesfer.github.io/apps/privacy-policy.html
+(Debe estar publicada y accesible antes de enviar a revisión)
+
+================================================================================
+OTROS (App access / News / COVID etc.)
+================================================================================
+Acceso restringido: NO (no hay login)
+ID de cuenta de prueba: No aplica
+
+Categoría de la app: Deportes
+Correo de contacto del desarrollador: german.fuentes@gmail.com
+
+================================================================================
+ARCHIVOS GRÁFICOS (carpeta store/)
+================================================================================
+store/play-store-icon-512.png          → Icono 512×512
+store/play-store-feature-1024x500.png  → Gráfico de funciones 1024×500
+store/play_store_listing_es.txt        → Textos ficha (ES)
+store/play_store_listing_en.txt        → Textos ficha (EN)
+
+Capturas: hazlas tú en el móvil o emulador (mín. 2):
+  1. Pantalla Inicio (cover + botón calculadora)
+  2. Calculadora de flechas (formulario)
+  3. Resultados (spine + modelos)
+  4. Ajustes / selector de idioma
+
+================================================================================
+SUBIR EL APK/AAB
+================================================================================
+flutter build appbundle --release
+→ build\app\outputs\bundle\release\app-release.aab
+
+Paquete: com.gff

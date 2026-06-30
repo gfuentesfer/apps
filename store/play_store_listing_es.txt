@@ -18,7 +18,7 @@ Características:
 • Opción «No conozco FPS» cuando no tienes la velocidad del arco
 • Interfaz en español e inglés
 
-La app consulta una API en la nube para los cálculos y el catálogo. No necesitas crear cuenta.
+La app funciona sin conexión: catálogo y cálculos en el dispositivo. No necesitas crear cuenta.
 
 Desarrollado por GFF.
 
@@ -28,4 +28,4 @@ Etiquetas / palabras clave (referencia):
 arquería, flechas, spine, arco recurvo, barebow, compuesto, Easton, calculadora
 
 Política de privacidad (URL):
-https://gfuentesfer.github.io/apps/myarrowsapp/privacy-policy.html
+https://gfuentesfer.github.io/apps/privacy-policy.html
