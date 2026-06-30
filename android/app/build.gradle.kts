@@ -19,7 +19,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.gff"
+    namespace = "com.gff.myarrows"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -29,7 +29,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.gff"
+        applicationId = "com.gff.myarrows"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
